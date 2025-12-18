@@ -5,18 +5,19 @@ import {NotFound} from './pages/not-found/not-found';
 export const routes: Routes = [
   {
     path: '',
-    redirectTo: '/',
+    pathMatch: 'full',
+    redirectTo: '/home',
   },
   {
-    path: '/',
+    path: 'home',
     component: Home,
   },
   {
-    path: '/chronicle',
+    path: 'chronicle',
     loadComponent: () => import("./pages/chronicle/chronicle").then((c => c.Chronicle))
   },
   {
-    path: '/chat',
+    path: 'chat',
     loadComponent: () => import("./pages/chat/chat").then((c => c.Chat))
   },
   {

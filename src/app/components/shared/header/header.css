@@ -1,0 +1,13 @@
+.navbar {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  background: #090808;
+}
+
+a {
+  font-weight: bold;
+  color: #107317;
+  font-size: large;
+  text-decoration: none;
+}
