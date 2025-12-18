@@ -1,11 +1,9 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 import {Header} from '../../components/shared/header/header';
 
 @Component({
   selector: 'app-home',
-  imports: [
-    Header
-  ],
+  imports: [],
   templateUrl: './home.html',
   styleUrl: './home.css',
   standalone: true
